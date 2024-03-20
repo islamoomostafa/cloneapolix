@@ -1,0 +1,82 @@
+// Navbar
+#navbar {
+  margin-top: -70px;
+  .navbar {
+    font-size: 15px;
+
+    .navbar-logo {
+      padding-right: 240px;
+      font-size: 40px;
+      color: #f1f6f9;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(120%);
+      }
+    }
+
+    .navbar-nav {
+      margin-left: 50px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+
+      .nav-item {
+        .nav-link {
+          color: #f1f6f9;
+          transition: all 0.3s ease;
+          padding: 13px;
+
+          &:hover {
+            background: rgba(216, 224, 228, 0.063);
+            border-radius: 25px;
+          }
+        }
+
+        &.last a {
+          margin-left: auto;
+          padding: 20px;
+          background: rgba(199, 219, 230, 0.062745098);
+          border-radius: 25px;
+          box-shadow: 0 3px 16px rgba(0, 0, 0, 0.0980392157);
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: #0b2545;
+            background: white;
+          }
+        }
+      }
+    }
+  }
+
+  @include respond(tab-portrait) {
+    .navbar {
+      .navbar-nav {
+        margin-left: 0;
+
+        .nav-item {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          .nav-link {
+            margin-top: 10px;
+          }
+        }
+
+        .last {
+          margin-left: 0;
+          margin-top: 20px;
+          width: 100%;
+
+          a {
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+}

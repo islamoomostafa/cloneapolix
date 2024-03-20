@@ -1,0 +1,61 @@
+footer {
+  background-color: #0b2545;
+  color: white;
+  padding: 40px 0;
+
+  ul.menu,
+  ul.menu.vertical {
+    list-style-type: none;
+  }
+
+  .symbol.bm {
+    margin-bottom: 20px;
+  }
+
+  .h3.small-h3.show-for-large {
+    font-size: 16px;
+  }
+
+  .menu-item {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: white;
+  }
+
+  .row .two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@include respond(tab-port) {
+  footer {
+    background-color: #0b2545;
+    color: white;
+    padding: 40px 0;
+
+    ul.menu,
+    ul.menu.vertical {
+      list-style-type: none;
+    }
+
+    .symbol.bm {
+      margin-bottom: 20px;
+    }
+
+    .h3.small-h3.show-for-large {
+      font-size: 16px;
+    }
+
+    .menu-item {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: white;
+    }
+  }
+}

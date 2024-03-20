@@ -1,0 +1,62 @@
+#contact {
+  padding: 80px 0;
+  position: relative; /* ضبط العنصر الأساسي كنسبي ليتمكن العنصر المضاف من التحكم فيه */
+  background-image: url("https://apolix.global/wp-content/uploads/2023/01/joel-filipe-QwoNAhbmLLo-unsplash-768x971.jpg");
+  background-size: cover;
+  background-position: center;
+  color: black;
+  mix-blend-mode: darken;
+  // background-color: rgba(0, 0, 0, 0.5);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    mix-blend-mode: color;
+    background-size: 100%;
+    opacity: 0.7;
+    filter: blur(10px);
+    // background-color: rgb(0, 0, 0);
+
+    background-image: url("https://apolix.global/wp-content/themes/apolix/assets/img/svg/cta_blue_overlay.svg");
+  }
+}
+
+.contact-info h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact-info p {
+  font-size: 18px;
+  color: white;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
